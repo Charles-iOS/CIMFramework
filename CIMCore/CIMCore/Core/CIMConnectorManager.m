@@ -1319,7 +1319,7 @@ enum CIMStreamConfig
 - (void)startBinding
 {
     state = STATE_CIM_BINDING;
-    
+#warning Binding 
 //    SEL selector = @selector(cimConnectorWillBind:);
 //    
 //    if (![multicastDelegate hasDelegateThatRespondsToSelector:selector])
@@ -1574,7 +1574,7 @@ completionHandler:(void (^)(BOOL shouldTrustPeer))completionHandler
         [self receiveReplyBody:(CIMReplyBody*)rootElement];
         if ([[rootElement attributeStringValueForName:@"key"] isEqualToString:CLIENT_BIND]) {
             if ([[rootElement attributeStringValueForName:@"code"] isEqualToString:@"200"]) {
-                
+#warning Binding
             }
         }
     }else if ([[rootElement name] isEqualToString:@"message"])
