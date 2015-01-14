@@ -17,3 +17,4 @@ FOUNDATION_EXPORT const unsigned char CIMCoreVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <CIMCore/PublicHeader.h>
 
 #import <CIMCore/CIM.h>
+//http://git.oschina.net/farsunset/cim
